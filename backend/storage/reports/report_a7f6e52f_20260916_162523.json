@@ -1,0 +1,265 @@
+{
+  "inspection": {
+    "id": "a7f6e52f-5358-4247-8042-b11f936b6f1a",
+    "status": "REVIEW_REQUIRED",
+    "overall_result_placeholder": "POTENTIAL_NON_COMPLIANCE",
+    "source_type": "FIELD_SCANNER",
+    "inspection_date": "2026-09-16T16:25:23.252486",
+    "created_at": "2026-09-16T16:25:23.252486",
+    "notes": null,
+    "inspector_name": "Enforcement Officer Verma",
+    "product_name": "Multi-Report Test Oats 1kg",
+    "brand": "OatLand",
+    "category": "Food & Beverages"
+  },
+  "product": {
+    "id": "2cb4182f-2f85-40f2-bfb9-0604187c1ecb",
+    "name": "Multi-Report Test Oats 1kg",
+    "brand": "OatLand",
+    "category": "Food & Beverages",
+    "barcode_gtin": null,
+    "country_of_origin": null,
+    "manufacturer": null,
+    "packer": null,
+    "importer": null
+  },
+  "declarations": [],
+  "compliance_checks": [
+    {
+      "id": "2f257a79-149b-483b-acca-3af2a7a86a88",
+      "rule_code": "PCR_2011_RULE_6_1_A",
+      "rule_name": "Manufacturer, Packer, or Importer Identification",
+      "legal_reference": "Rule 6(1)(a), Legal Metrology (Packaged Commodities) Rules, 2011",
+      "version": "1.0",
+      "status": "REVIEW",
+      "severity": "MAJOR",
+      "explanation": "Mandatory declaration was not detected in automated OCR. However, image quality or contrast warnings indicate possible extraction omissions. Physical officer verification required.",
+      "detected_value": null,
+      "expected_requirement": "The name and complete address of the manufacturer, or where the manufacturer is not the packer, the name and address of the manufacturer and packer, or for imported goods the importer.",
+      "confidence": 0.5
+    },
+    {
+      "id": "059249b1-b81c-4e76-83e4-5141282f3455",
+      "rule_code": "PCR_2011_RULE_6_1_B",
+      "rule_name": "Generic or Common Name of Commodity",
+      "legal_reference": "Rule 6(1)(b), Legal Metrology (Packaged Commodities) Rules, 2011",
+      "version": "1.0",
+      "status": "REVIEW",
+      "severity": "MAJOR",
+      "explanation": "Mandatory declaration was not detected in automated OCR. However, image quality or contrast warnings indicate possible extraction omissions. Physical officer verification required.",
+      "detected_value": null,
+      "expected_requirement": "The common or generic names of the commodity contained in the package shall be declared on the principal display panel.",
+      "confidence": 0.5
+    },
+    {
+      "id": "08c14be4-a69c-4666-b527-d9d43ee2d29a",
+      "rule_code": "PCR_2011_RULE_6_1_C",
+      "rule_name": "Net Quantity in Standard Units of Weight, Measure or Number",
+      "legal_reference": "Rule 6(1)(c) & Rule 11 / Second Schedule, Legal Metrology (Packaged Commodities) Rules, 2011",
+      "version": "1.0",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "explanation": "Potential non-compliance: Net quantity declaration is missing on packaging.",
+      "detected_value": "NOT_DETECTED",
+      "expected_requirement": "The net quantity, in terms of the standard unit of weight or measure, of the commodity contained in the package or where the commodity is packed or sold by number, the number of the commodity contained in the package shall be mentioned on the package.",
+      "confidence": 0.92
+    },
+    {
+      "id": "9893b94d-9733-468b-9229-1de1c39a4b63",
+      "rule_code": "PCR_2011_RULE_6_1_D",
+      "rule_name": "Month and Year of Manufacture / Packing / Import",
+      "legal_reference": "Rule 6(1)(d), Legal Metrology (Packaged Commodities) Rules, 2011",
+      "version": "2.0",
+      "status": "FAIL",
+      "severity": "MAJOR",
+      "explanation": "Potential non-compliance: Mandatory declaration 'DATE_OF_MANUFACTURE' is missing on packaging.",
+      "detected_value": "NOT_DETECTED",
+      "expected_requirement": "The month and year in which the commodity is manufactured (or month and year of import for imported commodities, or month and year of pre-packing where packed by an entity other than the manufacturer) shall be clearly declared.",
+      "confidence": 0.88
+    },
+    {
+      "id": "7cb1455a-852a-4e11-a8f0-ce16187d636b",
+      "rule_code": "PCR_2011_RULE_6_1_E",
+      "rule_name": "Maximum Retail Price (MRP) Inclusive of All Taxes",
+      "legal_reference": "Rule 6(1)(e), Legal Metrology (Packaged Commodities) Rules, 2011",
+      "version": "2.0",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "explanation": "Potential non-compliance: Maximum Retail Price (MRP) declaration is missing on packaging.",
+      "detected_value": "NOT_DETECTED",
+      "expected_requirement": "The retail sale price of the package shall clearly indicate Maximum or Max. Retail Price Rs./₹ ... inclusive of all taxes or MRP Rs./₹ ... (inclusive of all taxes).",
+      "confidence": 0.9
+    },
+    {
+      "id": "9be39800-6320-499e-bee8-c3b5ed4185d6",
+      "rule_code": "PCR_2021_RULE_6_1_EA",
+      "rule_name": "Unit Sale Price (USP) Declaration",
+      "legal_reference": "Rule 6(1)(ea) & Rule 6(11), Legal Metrology (Packaged Commodities) (Amendment) Rules, 2021",
+      "version": "1.0",
+      "status": "REVIEW",
+      "severity": "MAJOR",
+      "explanation": "Mandatory declaration was not detected in automated OCR. However, image quality or contrast warnings indicate possible extraction omissions. Physical officer verification required.",
+      "detected_value": null,
+      "expected_requirement": "The unit sale price shall be declared on every package where net quantity is more than 1 kg / 1 L in terms of Rs. per kg / per L, or where net quantity is less than 1 kg / 1 L in terms of Rs. per g / per ml, or where sold by number in terms of Rs. per number/piece; except where net quantity is exactly 1 kg, 1 L, 1 m, or 1 number.",
+      "confidence": 0.5
+    },
+    {
+      "id": "6f4d6f86-e7a4-4087-be3d-ade0fc9d84ca",
+      "rule_code": "PCR_2011_RULE_6_1_G",
+      "rule_name": "Consumer Care Details",
+      "legal_reference": "Rule 6(1)(g), Legal Metrology (Packaged Commodities) Rules, 2011",
+      "version": "1.0",
+      "status": "FAIL",
+      "severity": "MAJOR",
+      "explanation": "Potential non-compliance: Required statutory declaration 'CONSUMER_CARE' is missing.",
+      "detected_value": "NOT_DETECTED",
+      "expected_requirement": "Name, address, telephone number and e-mail address of the person or office who can be contacted in case of consumer complaints shall be declared on the package.",
+      "confidence": 0.88
+    },
+    {
+      "id": "1efeecb0-c4e2-46b6-9ba6-3ca1b89c0dc4",
+      "rule_code": "PCR_2011_RULE_6_1_H",
+      "rule_name": "Country of Origin for Imported Commodities",
+      "legal_reference": "Rule 6(1)(h) & Rule 6(10), Legal Metrology (Packaged Commodities) Rules, 2011",
+      "version": "1.0",
+      "status": "NOT_APPLICABLE",
+      "severity": "MAJOR",
+      "explanation": "Rule PCR_2011_RULE_6_1_H (v1.0) is not applicable to this inspection context, product category, or effective date.",
+      "detected_value": null,
+      "expected_requirement": "The name of the country of origin or manufacture or assembly in case of imported products shall be mentioned on the package.",
+      "confidence": 1.0
+    },
+    {
+      "id": "ff56f129-7632-4117-8c7b-5aa6de4852a7",
+      "rule_code": "PCR_2026_RULE_6_10A_ECOM",
+      "rule_name": "E-Commerce Marketplace Country of Origin & Search Filter",
+      "legal_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 — Rule 6(10A)",
+      "version": "1.0",
+      "status": "NOT_APPLICABLE",
+      "severity": "MAJOR",
+      "explanation": "Rule PCR_2026_RULE_6_10A_ECOM (v1.0) is not applicable to this inspection context, product category, or effective date.",
+      "detected_value": null,
+      "expected_requirement": "Every e-commerce entity selling imported products shall provide the product listings of such imported products in a searchable and sortable filter specifying the country of origin.",
+      "confidence": 1.0
+    },
+    {
+      "id": "d1757c18-5834-4d5d-901a-8b553160555b",
+      "rule_code": "PCR_2011_RULE_7_8",
+      "rule_name": "Font Height and Prominence on Display Panel",
+      "legal_reference": "Rules 7 & 8, Table I, Legal Metrology (Packaged Commodities) Rules, 2011",
+      "version": "1.0",
+      "status": "REVIEW",
+      "severity": "MINOR",
+      "explanation": "Font size evaluation for NET_QUANTITY could not be conducted because no matching declaration bounding coordinates were detected.",
+      "detected_value": "NO_BOUNDING_BOX",
+      "expected_requirement": "Declarations shall be prominent, legible, and maintain minimum numeral and character heights (1.0 mm to 6.0 mm) relative to principal display panel area as prescribed in Table I. On uncalibrated digital imagery, character height is estimated and flagged for physical verification.",
+      "confidence": 0.5
+    }
+  ],
+  "violations": [
+    {
+      "id": "627676e3-698b-4b87-b4d8-bfb5e8b87815",
+      "violation_code": "VIOL_PCR_2011_RULE_6_1_C",
+      "description": "Potential non-compliance: Net quantity declaration is missing on packaging.",
+      "severity": "CRITICAL",
+      "status": "FLAGGED_FOR_REVIEW",
+      "officer_comment": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "evidences": [
+        {
+          "source_type": "CALCULATION_LOG",
+          "description": "Screening algorithm verified absence of net quantity declaration.",
+          "bounding_box": null,
+          "confidence": 0.92
+        }
+      ]
+    },
+    {
+      "id": "2aa6ea04-7297-4e4b-bac7-9ab58b26babf",
+      "violation_code": "VIOL_PCR_2011_RULE_6_1_D",
+      "description": "Potential non-compliance: Mandatory declaration 'DATE_OF_MANUFACTURE' is missing on packaging.",
+      "severity": "MAJOR",
+      "status": "FLAGGED_FOR_REVIEW",
+      "officer_comment": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "evidences": []
+    },
+    {
+      "id": "1b7a493b-978e-48ff-a97a-993678a482a2",
+      "violation_code": "VIOL_PCR_2011_RULE_6_1_E",
+      "description": "Potential non-compliance: Maximum Retail Price (MRP) declaration is missing on packaging.",
+      "severity": "CRITICAL",
+      "status": "FLAGGED_FOR_REVIEW",
+      "officer_comment": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "evidences": [
+        {
+          "source_type": "CALCULATION_LOG",
+          "description": "Screening algorithm verified absence of MRP tokens.",
+          "bounding_box": null,
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "id": "27e3aafe-19a5-4018-a66a-bbf6f725dd78",
+      "violation_code": "VIOL_PCR_2011_RULE_6_1_G",
+      "description": "Potential non-compliance: Required statutory declaration 'CONSUMER_CARE' is missing.",
+      "severity": "MAJOR",
+      "status": "FLAGGED_FOR_REVIEW",
+      "officer_comment": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "evidences": []
+    }
+  ],
+  "history_logs": [
+    {
+      "id": "3a42a63c-b87d-41bc-bc37-754b9511d5d1",
+      "action": "INSPECTION_CREATED",
+      "previous_status": null,
+      "new_status": "CREATED",
+      "timestamp": "2026-09-16T16:25:23.252743",
+      "user_name": "Enforcement Officer Verma",
+      "change_metadata": {
+        "notes": null,
+        "source": "FIELD_SCANNER",
+        "created_by": "Enforcement Officer Verma"
+      }
+    },
+    {
+      "id": "0058fad1-a19b-4e42-a469-8e3411d99bef",
+      "action": "COMPLIANCE_EVALUATION",
+      "previous_status": "REVIEW_REQUIRED",
+      "new_status": "POTENTIAL_NON_COMPLIANCE",
+      "timestamp": "2026-09-16T16:25:23.270584",
+      "user_name": "Enforcement Officer Verma",
+      "change_metadata": {
+        "total_rules_evaluated": 10,
+        "pass_count": 0,
+        "fail_count": 4,
+        "review_count": 4,
+        "violations_flagged": 4
+      }
+    },
+    {
+      "id": "3f74b683-0d11-4818-ac76-872b75686a71",
+      "action": "REPORT_GENERATED_PDF",
+      "previous_status": "REVIEW_REQUIRED",
+      "new_status": "REVIEW_REQUIRED",
+      "timestamp": "2026-09-16T16:25:23.283338",
+      "user_name": "Enforcement Officer Verma",
+      "change_metadata": {
+        "report_type": "INSPECTION_SUMMARY",
+        "format": "PDF",
+        "file_path": "storage/reports/report_a7f6e52f_20260916_162523.pdf"
+      }
+    }
+  ],
+  "document_title": "AI-Assisted Legal Metrology Inspection Report",
+  "document_classification": "Advisory / Screening Document — Not an Official Government Enforcement Order",
+  "legal_disclaimer": "Advisory / Screening Document — Not an Official Government Enforcement Order. MetaCheck AI operates as an automated AI screening assistant. Output findings represent potential advisory observations. Final legal compliance determinations rest exclusively with authorized Legal Metrology Officers pursuant to The Legal Metrology Act, 2009 and PCR 2011."
+}

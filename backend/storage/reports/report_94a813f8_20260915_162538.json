@@ -1,0 +1,45 @@
+{
+  "inspection": {
+    "id": "94a813f8-98e1-4440-a81a-aab531ce9e70",
+    "status": "CREATED",
+    "overall_result_placeholder": "PENDING_VERIFICATION",
+    "source_type": "PORTAL_UPLOAD",
+    "inspection_date": "2026-09-15T16:25:38.117257",
+    "created_at": "2026-09-15T16:25:38.117257",
+    "notes": null,
+    "inspector_name": "Admin System User",
+    "product_name": "Almond Milk 1L",
+    "brand": "NutriLife",
+    "category": "Dairy Alternatives"
+  },
+  "product": {
+    "id": "15f12636-5480-485e-8e5c-47de4cb963de",
+    "name": "Almond Milk 1L",
+    "brand": "NutriLife",
+    "category": "Dairy Alternatives",
+    "barcode_gtin": null,
+    "country_of_origin": null,
+    "manufacturer": null,
+    "packer": null,
+    "importer": null
+  },
+  "declarations": [],
+  "compliance_checks": [],
+  "violations": [],
+  "history_logs": [
+    {
+      "id": "a088f12c-809f-4658-86d7-850021fb9c67",
+      "action": "INSPECTION_CREATED",
+      "previous_status": null,
+      "new_status": "CREATED",
+      "timestamp": "2026-09-15T16:25:38.117539",
+      "user_name": "Admin System User",
+      "change_metadata": {
+        "notes": null,
+        "source": "PORTAL_UPLOAD",
+        "created_by": "Admin System User"
+      }
+    }
+  ],
+  "legal_disclaimer": "MetaCheck AI operates as an automated AI screening assistant. Output findings represent potential advisory observations. Final legal determinations rest exclusively with authorized Legal Metrology Officers pursuant to The Legal Metrology Act, 2009 and PCR 2011."
+}

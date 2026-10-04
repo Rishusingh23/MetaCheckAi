@@ -1,0 +1,72 @@
+services:
+  # -------------------------------------------------------------
+  # PostgreSQL Database Service
+  # -------------------------------------------------------------
+  postgres:
+    image: postgres:16-alpine
+    container_name: metacheck-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-metacheck_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-metacheck_secure_password_replace_me}
+      POSTGRES_DB: ${POSTGRES_DB:-metacheck_db}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-metacheck_user} -d ${POSTGRES_DB:-metacheck_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - metacheck-network
+
+  # -------------------------------------------------------------
+  # Backend API Service (FastAPI)
+  # -------------------------------------------------------------
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: metacheck-backend
+    restart: unless-stopped
+    environment:
+      - ENVIRONMENT=${ENVIRONMENT:-development}
+      - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER:-metacheck_user}:${POSTGRES_PASSWORD:-metacheck_secure_password_replace_me}@postgres:5432/${POSTGRES_DB:-metacheck_db}
+      - BACKEND_CORS_ORIGINS=${BACKEND_CORS_ORIGINS:-http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - PROJECT_NAME=${PROJECT_NAME:-MetaCheck AI}
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - metacheck-network
+
+  # -------------------------------------------------------------
+  # Frontend Web Client (React + Vite + Tailwind CSS)
+  # -------------------------------------------------------------
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: metacheck-frontend
+    restart: unless-stopped
+    environment:
+      - VITE_API_BASE_URL=${VITE_API_BASE_URL:-http://localhost:8000}
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    networks:
+      - metacheck-network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  metacheck-network:
+    driver: bridge
